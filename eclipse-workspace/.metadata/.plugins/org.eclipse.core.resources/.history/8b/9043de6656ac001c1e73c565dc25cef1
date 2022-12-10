@@ -1,0 +1,20 @@
+package collections;
+import java.util.*;
+public class Collections {  
+	public static void main(String args[]){  
+		Stack<String> stack = new Stack<String>();  
+		stack.push("nivi");  
+		stack.push("papu");  
+		stack.push("brindhan");  
+		stack.push("abi");  
+		stack.push("lemon");  
+		stack.pop();  
+		stack.pop();
+		Iterator<String> itr=stack.iterator();  
+		while(itr.hasNext())
+		{  
+		System.out.println(itr.next());  
+		}  
+	}
+}
+		

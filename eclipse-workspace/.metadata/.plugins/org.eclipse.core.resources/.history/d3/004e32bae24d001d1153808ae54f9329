@@ -1,0 +1,37 @@
+package com.qa.testscripts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MyntraHomePage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver=null;
+		//String browser="chrome";
+		String browser="edge";
+		if(browser.equalsIgnoreCase("edge")) {
+			System.setProperty("webdriver.edge.driver","C:\\Users\\abirami s s\\eclipse-workspace\\myntra\\target\\driver\\msedgedriver.exe");
+			 driver =new ChromeDriver();
+		}
+		
+		/* driver.get("https://www.amazon.com");
+		driver.manage().window().maximize();
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		WebElement SearchBox = driver.findElement(By.id("twotabsearchtextbox"));
+		SearchBox.sendKeys("kettle");
+		WebElement SearchIcon=driver.findElement(By.className("nav-input nav-progressive-attribute-"));
+		SearchIcon.click();
+		//WebElement CheckBox=driver.findElement)By.name("");
+		//CheckBox.click();
+		driver.quit();
+		*/
+		
+
+	}
+	//*[@id='tsf']/div[1]/div[1]/div[2]/div/div[2]/input
+
+}

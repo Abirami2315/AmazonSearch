@@ -1,0 +1,33 @@
+package com.qa.testscripts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MyntraHomePage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//WebDriver driver=new ChromeDriver();
+		//String browser="chrome";
+		//if(browser.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\abirami s s\\Desktop\\virtusa\\chromedriver.exe");
+			WebDriver driver =new ChromeDriver();
+		
+		driver.get("https://www.amazon.com");
+		driver.manage().window().maximize();
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		WebElement SearchBox = driver.findElement(By.id("twotabsearchtextbox"));
+		SearchBox.sendKeys("kettle");
+		WebElement SearchIcon=driver.findElement(By.className("nav-search-submit-button"));
+		SearchIcon.click();
+		//WebElement CheckBox=driver.findElement)By.name("");
+		//CheckBox.click();
+		driver.quit();
+		
+
+	}
+
+}

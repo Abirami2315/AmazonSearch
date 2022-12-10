@@ -1,0 +1,45 @@
+package com.qa.testscripts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class MyntraHomePage {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		EdgeDriver driver=null;
+		//String browser="chrome";
+		String browser="edge";
+		if(browser.equalsIgnoreCase("edge")) {
+			System.setProperty("webdriver.edge.driver","C:\\Users\\abirami s s\\eclipse-workspace\\myntra\\target\\driver\\msedgedriver.exe");
+			 driver =new EdgeDriver();
+		}
+		
+		 driver.get("https://www.amazon.com");
+		/* driver.manage().window().maximize();
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		WebElement SearchBox = driver.findElement(By.id("twotabsearchtextbox"));
+		SearchBox.sendKeys("kettle");
+		WebElement SearchIcon=driver.findElement(By.className("nav-input nav-progressive-attribute-"));
+		SearchIcon.click();
+		WebElement CheckBox=driver.findElement)By.name("");
+		CheckBox.click();
+		driver.quit();
+		 */
+		 Thread.sleep(5000);
+		 String title=driver.getTitle();
+		 System.out.println(title);
+		 WebElement Search = driver.findElement(By.id("twotabsearchtextbox"));
+			Search.sendKeys("kettle");
+			//WebElement SearchIcon=driver.findElement(By.className("nav-input nav-progressive-attribute-"));
+			Thread.sleep(5000);
+			driver.navigate().back();
+			
+			title=driver.getTitle();
+			System.out.println(title);
+	}
+}

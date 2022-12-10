@@ -1,0 +1,12 @@
+package firstpro;
+
+public class method {
+	static void myMethod() {
+		System.out.println("abi");
+	}
+	public static void main(String[] args) {
+		myMethod();
+		myMethod();
+	}
+
+}

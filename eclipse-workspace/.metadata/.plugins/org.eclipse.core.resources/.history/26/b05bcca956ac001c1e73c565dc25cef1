@@ -1,0 +1,11 @@
+package collections;
+import java.util.HashMap;
+public class Collections {  
+	public static void main(String args[]){  
+		HashMap<String,Integer>map=new Hashmap();
+		map.put("abi", 100);
+		map.put("bb", 200);
+		System.out.println(map.containsValue("abi"));
+	}
+}
+		

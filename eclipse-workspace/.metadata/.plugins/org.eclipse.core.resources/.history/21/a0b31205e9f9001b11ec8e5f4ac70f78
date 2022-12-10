@@ -1,0 +1,12 @@
+package firstpro;
+
+public class variables {
+	public static void main(String[] args) {
+		String name="abi";
+		System.out.println(name);
+		
+		
+		
+	}
+
+}
