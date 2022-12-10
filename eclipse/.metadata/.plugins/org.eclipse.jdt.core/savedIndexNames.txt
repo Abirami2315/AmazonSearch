@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+C:\Users\abirami s s\Desktop\virtusa\eclipse\.metadata\.plugins\org.eclipse.jdt.core
-1210658807.index
-1828026965.index
